@@ -30,10 +30,10 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
-        .banner-slide{
+        /* .banner-slide{
             background-image: url("./images/banner1.png"), bg-gradient-to-r from-sky-500 to-indigo-500
             linear-gradient(45deg, #070707, #5c5c5c);
-        }
+        } */
     </style>
 
 </head>
@@ -57,9 +57,8 @@
             <div class=" navbar-end hidden lg:flex md:flex mr-6">
                 <div class="form-control lg:w-80 md:w-52">
                   <input type="text" placeholder="Search Here" class="input input-bordered rounded-full" />
-                 
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class=" -ml-10 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class=" -ml-10 h-5 w-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             <!-- <button class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </button>
@@ -514,6 +513,37 @@
                 <!-- end right side  -->
           </div>
         </section>
+
+        <footer class="footer flex flex-col footer-center p-20 bg-[#121212] text-white ">
+          <section> 
+            <!-- logo div  -->
+            <div class="flex justify-center  items-center gap-5 pb-8">
+              <img src="./images/logo.png" alt="" class="lg:w-12 w-8">
+              <h1 class="font-bold lg:text-5xl text-3xl"> Fruit Burst</h1>
+            </div>
+            <!-- footer links div  -->
+            <div class="flex flex-wrap lg:gap-10 gap-6 text-lg ">
+              <!-- <a class="link no-underline hover:bg-red-300 hover:py-2 hover:px-3 hover:rounded-lg">Home</a>  -->
+              <a class="link no-underline">Home</a> 
+              <a class="link no-underline">About us</a> 
+              <a class="link no-underline">Shop</a> 
+              <a class="link no-underline">All Fruits</a> 
+              <a class="link no-underline">Support</a>
+              <a class="link no-underline">My Account</a>
+            </div>
+            <!-- social media icon -->
+            <div class="py-10">
+              <div class="grid grid-flow-col md:gap-10 gap-6 text-3xl">
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-apple"></i>
+              </div>
+            </div> 
+          </section>
+         </footer>
     </main>
 </body>
 </html>
