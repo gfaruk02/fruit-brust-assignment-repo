@@ -20,7 +20,10 @@
           theme: {
             extend: {
               backgroundImage: {
-                // banner1: "url('./images/banner1.png'), bg-gradient-to-r from-sky-500 to-indigo-500",
+                banner1: "url('./images/banner1.png')",
+                banner2: "url('./images/banner2.png')",
+                banner3: "url('./images/banner3.png')",
+                banner4: "url('./images/banner4.png')",
               }
             }
           }
@@ -39,7 +42,7 @@
 
 </head>
 <body class="font-lato">
-    <header class=" mx-auto max-w-6xl px-5 my-5"> 
+    <header class=" mx-auto max-w-6xl px-5 my-5 text-center relative"> 
         <div class="lg:px-6 flex justify-between gap-10 navbar bg-[#F85559] rounded-full">
             <div class="navbar-start hidden lg:flex md:flex">
               <ul class="menu menu-horizontal px-1 md:flex-nowrap lg:text-lg text-white">
@@ -90,61 +93,90 @@
             </div>
         </div>
         <!-- banner -->
-        <section class="my-8 "> 
-            <div class="carousel w-full  ">
-                <div id="slide1" class="carousel-item relative w-full h-screen">
-                  <img src="./images/banner1.png" class="w-full " />
+        <section class="my-8"> 
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full h-screen bg-banner1 bg-blend-overlay bg-[#00000066]">
+            
+                    <!-- <img src="./images/banner1.png" class=" w-full max-h-[500px] md:max-h-[620px] bg-blend-darken bg-[#000000b3]" /> -->
+         
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle ">❮</a> 
                     <div class="text-center  text-white">
-                        <h1 class=" lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="text-xl font-medium p-6">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-5 hover:text-black">Shop Now</button>
+                        <h1 class=" lg:text-7xl text-3xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xl font-medium lg:lg:p-6 p-2 p-2">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-2 md:mb-10 hover:text-black">Shop Now</button>
                       </div>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                     
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./images/banner2.png" class="w-full" />
+                <div id="slide2" class="carousel-item relative w-full bg-banner2 bg-blend-overlay bg-[#00000066]">
+                  <!-- <img src="./images/banner2.png" class="bg-blend-darken w-full max-h-[500px] md:max-h-[620px]" /> -->
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
                     <div class="text-center  text-white">
-                        <h1 class=" lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="text-xl font-medium p-6">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-5  hover:text-black">Shop Now</button>
+                        <h1 class=" lg:text-7xl text-3xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xl font-medium lg:p-6 p-2">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-2 md:mb-10  hover:text-black">Shop Now</button>
                       </div>
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./images/banner3.png" class="w-full" />
+                <div id="slide3" class="carousel-item relative w-full bg-banner3 bg-blend-overlay bg-[#00000066]">
+                  <!-- <img src="./images/banner3.png" class="bg-blend-overlay w-full max-h-[500px] md:max-h-[620px]" /> -->
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <div class="text-center  text-white">
-                        <h1 class=" lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="text-xl font-medium p-6">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-5  hover:text-black">Shop Now</button>
+                        <h1 class=" lg:text-7xl text-3xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xl font-medium lg:p-6 p-2">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-2 md:mb-10  hover:text-black">Shop Now</button>
                       </div>
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="./images/banner4.png" class="w-full" />
+                <div id="slide4" class="carousel-item relative w-full bg-banner4 bg-blend-overlay bg-[#00000066]">
+                  <!-- <img src="./images/banner4.png" class="w-full max-h-[500px] md:max-h-[620px]" /> -->
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
                     <div class="text-center  text-white">
-                        <h1 class=" lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="text-xl font-medium p-6">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-5  hover:text-black">Shop Now</button>
+                        <h1 class=" lg:text-7xl text-3xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xl font-medium lg:p-6 p-2">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-none text-xl font-bold text-white px-8 pt-4 pb-11 mt-2 md:mb-10  hover:text-black">Shop Now</button>
                       </div>
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
               </div>
+
+        </section>
+        <section class=" absolute mx-auto w-[950px] p-5 my-5 flex justify-between items-center text-center text-xl font-medium text-[#121212cc] rounded-lg shadow-xl hidden lg:flex -mt-40 left-24  bg-white"> 
+          <!-- items image and text  -->
+          <div>
+            <img src="./images/fruit1.png" alt="" class="w-32 h-28">
+            <p>Strawberry</p>
+          </div>
+          <!-- items image and text  -->
+          <div>
+            <img src="./images/fruit2.png" alt="" class="w-32 h-28">
+            <p>Orange</p>
+          </div>
+          <!-- items image and text  -->
+          <div>
+            <img src="./images/fruit3.png" alt="" class="w-32 h-28">
+            <p>Mango</p>
+          </div>
+          <!-- items image and text  -->
+          <div >
+            <img src="./images/fruit4.png" alt="" class="w-32 h-28">
+            <p>Strawberry</p>
+          </div>
+           <!-- items image and text  -->
+          <div>
+            <img src="./images/fruit5.png" alt="" class="w-32 h-28">
+            <p>Mango</p>
+          </div>
         </section>
     </header>
-
     <main> 
         <!-- Deal of the day -->
         <section class=" mx-auto max-w-6xl px-5 lg:my-20"> 
